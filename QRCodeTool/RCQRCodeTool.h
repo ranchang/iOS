@@ -1,9 +1,8 @@
 //
 //  RCQRCodeTool.h
-//  MideaiPlus
 //
 //  Created by yan zhang on 16/4/13.
-//  Copyright © 2016年 Midea. All rights reserved.
+//  Copyright © 2016年 yan zhang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
