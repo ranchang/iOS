@@ -36,7 +36,7 @@
     _hud = [[MBProgressHUD alloc] initWithView:self.backgroundView];
     _hud.removeFromSuperViewOnHide = YES;
     _hud.bezelView.color = [UIColor whiteColor];
-    _hud.activityIndicatorColor = [UIColor colorWithRed:54.0/255 green:188.0/255 blue:138.0/255 alpha:1.0];
+    [UIActivityIndicatorView appearanceWhenContainedIn:[MBProgressHUD class], nil].color = [UIColor colorWithRed:54.0/255 green:188.0/255 blue:138.0/255 alpha:1.0];
     _hud.square = YES;
     _hud.label.text = message;
     _hud.label.textColor = [UIColor colorWithRed:54.0/255 green:188.0/255 blue:138.0/255 alpha:1.0];
