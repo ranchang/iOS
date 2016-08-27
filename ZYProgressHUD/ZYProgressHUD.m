@@ -44,6 +44,16 @@
     [_hud showAnimated:YES];
 }
 
+- (void)showMessage:(NSString *)message duration:(NSTimeInterval)duration
+{
+    UIView *view = [[UIApplication sharedApplication].windows lastObject];
+    _hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    _hud.removeFromSuperViewOnHide = YES;
+    _hud.mode = MBProgressHUDModeText;
+    _hud.margin = 12.0;
+    _hud.label.text = message;
+    [_hud hideAnimated:YES afterDelay:duration];
+}
 
 - (void)hide
 {

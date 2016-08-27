@@ -15,6 +15,7 @@
 
 + (ZYProgressHUD *)progressHUD;
 - (void)showMessage:(NSString *)message;
+- (void)showMessage:(NSString *)message duration:(NSTimeInterval)duration;
 - (void)hide;
 
 @end
